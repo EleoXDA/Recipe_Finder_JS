@@ -117,3 +117,25 @@ section:not(:last-child)::after {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.recipe-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
