@@ -1,8 +1,8 @@
-require('dotenv').config();
-const apiKey = process.env.API_KEY;
+// require('dotenv').config();
+// const apiKey = process.env.API_KEY;
 
 async function searchRecipes(query) {
-  const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
+  const apiUrl = `/api/data?query=${query}`;
 
   try {
     const response = await fetch(apiUrl);
