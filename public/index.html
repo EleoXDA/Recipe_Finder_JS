@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Finder</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by ingredient...">
+      <button id="search-btn">Search</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#categories"><i class="fas fa-list-ul"></i>Categories</a></li>
+          <li><a href="#discover"><i class="fas fa-compass"></i>Discover Recipes</a></li>
+          <li><a href="#search"><i class="fas fa-search"></i>Search for Ingredients</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main>
+      <section id="categories">
+        <h2>Categories</h2>
+        <!-- Categories content here -->
+      </section>
+      
+      <section id="discover">
+        <h2>Discover Recipes</h2>
+        <!-- Discover recipes content here -->
+      </section>
+      
+      <section id="search">
+        <h2>Famous Ingredients</h2>
+        <!-- Search for ingredients content here -->
+      </section>
+
+      <section id="results">
+        <h2>Results</h2>
+        <div id="recipe-results"></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
