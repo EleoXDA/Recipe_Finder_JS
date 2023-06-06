@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 300px;
+  max-width: 80%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar ul li a i {
+  margin-right: 10px;
+}
+
+#sidebar ul li a:hover {
+  color: #4caf50;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+section:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 20px;
+}
+
+#recipe-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
